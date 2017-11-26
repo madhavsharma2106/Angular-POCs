@@ -1,0 +1,113 @@
+/*GENERAL CSS*/
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Lato', sans-serif;
+}
+
+button {
+    cursor: pointer;
+    padding: 10px;
+    font-size: 1.1em;
+    border: 3px solid white;
+    background-color: #8c3cd2;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s linear;
+    margin: 20px 0;
+}
+
+button:hover {
+    background-color: white;
+    color: #8c3cd2;
+}
+
+input{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 1em;
+}
+
+/*HOME PAGE STYLES*/
+
+.home {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    color: white;
+    background-color: #8c3cd2;
+}
+
+.home div {
+    margin: auto;
+}
+
+.home h1 {
+    font-size: 5em;
+}
+
+.home h2 {
+    font-size: 3em;
+}
+
+
+/*DASHBOARD STYLES*/
+
+.dashboard {
+    background: #eee;
+}
+
+.dashboard .container {
+    width: 1170px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboard .container .poc-card {
+    position: relative;
+    background-color: #fff;
+    width: 800px;
+    padding: 20px;
+    margin: 50px auto;
+    box-shadow: 10px 10px 49px -7px rgba(0, 0, 0, 0.63);
+    -webkit-box-shadow: 10px 10px 49px -7px rgba(0, 0, 0, 0.63);
+    -moz-box-shadow: 10px 10px 49px -7px rgba(0, 0, 0, 0.63);
+}
+
+.dashboard .container .poc-card::before {
+    content: "01";
+    position: absolute;
+    font-size: 9em;
+    top: -80px;
+    left: -100px;
+    z-index: -1;
+    color: white;
+    font-weight: bold;
+}
+
+.dashboard .container .poc-card button {
+    color: #8c3cd2;
+    background-color: white;
+    border-color: #8c3cd2;
+    float: right;
+}
+
+.dashboard .container .poc-card button:hover {
+    color: #fff;
+    background-color: #8c3cd2;
+    border-color: #8c3cd2;
+}
+
+.dashboard .container h1{
+    color: #8c3cd2;
+}
+
+.dashboard .container p{
+    margin: 20px 0;
+}
