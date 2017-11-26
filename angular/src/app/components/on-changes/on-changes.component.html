@@ -1,0 +1,10 @@
+<div class="display-card">
+  <h2>Parent Component</h2>
+  <input type="text" [(ngModel)]="changeDetector" >
+  <p>Data from Child Component: {{childData}}</p>
+</div>
+
+<div class="display-card">
+  <h2>Child Component</h2>
+  <app-on-changes-child [changeDetector]="changeDetector" (childData)="childData = $event" ></app-on-changes-child>  
+</div>

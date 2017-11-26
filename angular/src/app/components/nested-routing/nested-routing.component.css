@@ -1,0 +1,9 @@
+.display-card .team{
+    display: flex;
+    justify-content: center;
+}
+
+.display-card h2{
+    text-align: center;
+}
+

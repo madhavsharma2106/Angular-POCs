@@ -1,0 +1,16 @@
+ .details{
+    display: flex;
+}
+
+ .details .text h3{
+    color: purple;
+}
+
+ .details .text{
+       display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: baseline;
+    margin: 10px;
+    text-align: justify;
+}

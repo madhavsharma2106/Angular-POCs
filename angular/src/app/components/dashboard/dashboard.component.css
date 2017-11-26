@@ -1,0 +1,60 @@
+
+/*DASHBOARD STYLES*/
+
+.dashboard {
+    background: #eee;
+}
+
+.dashboard .container {
+    width: 1170px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboard .container .poc-card {
+    position: relative;
+    background-color: #fff;
+    width: 800px;
+    padding: 20px;
+    margin: 50px auto;
+    box-shadow: 10px 10px 49px -7px rgba(0, 0, 0, 0.63);
+    -webkit-box-shadow: 10px 10px 49px -7px rgba(0, 0, 0, 0.63);
+    -moz-box-shadow: 10px 10px 49px -7px rgba(0, 0, 0, 0.63);
+}
+
+.dashboard .container .poc-card .task {
+    position: absolute;
+    font-size: 9em;
+    top: -110px;
+    right: -80px;
+    color: white;
+    font-weight: bold;
+}
+
+.dashboard .container .poc-card button {
+    color: #8c3cd2;
+    background-color: white;
+    border-color: #8c3cd2;
+    float: right;
+}
+
+.dashboard .container .poc-card button:hover {
+    color: #fff;
+    background-color: #8c3cd2;
+    border-color: #8c3cd2;
+}
+
+.dashboard .container h1{
+    color: #8c3cd2;
+}
+
+.dashboard .container p{
+    margin: 20px 0;
+}
+
+.dashboard .disabled-btn{
+    color: white !important;
+    background: grey !important;
+    border-color: black !important;
+}

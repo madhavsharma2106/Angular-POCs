@@ -1,0 +1,59 @@
+/*GENERAL CSS*/
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+html {
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    background: #eee;
+}
+
+button {
+    cursor: pointer;
+    padding: 10px;
+    font-size: 1.1em;
+    border: 3px solid white;
+    background-color: #8c3cd2;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s linear;
+    margin: 20px 10px;
+}
+
+button:hover {
+    background-color: white;
+    color: #8c3cd2;
+}
+
+b,
+h2{
+    color: #8c3cd2;
+}
+
+input{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 1em;
+}
+
+.display-card{
+    width: 600px;
+    margin: 50px auto;
+    background-color: white;
+    padding: 20px;
+    line-height: 1.5;
+    box-shadow: 10px 10px 49px -7px rgba(0, 0, 0, 0.63);
+    -webkit-box-shadow: 10px 10px 49px -7px rgba(0, 0, 0, 0.63);
+    -moz-box-shadow: 10px 10px 49px -7px rgba(0, 0, 0, 0.63);
+}

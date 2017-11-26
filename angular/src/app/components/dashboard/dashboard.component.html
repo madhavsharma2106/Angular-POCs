@@ -1,0 +1,75 @@
+<div class="dashboard">
+  <div class="container">
+    <div class="poc-card">
+      <p class="task">01</p>
+      <h1>NgOnChanges, Input, Output</h1>
+      <p>Displayed through two components passing data b/w each other. </p>
+      <a routerLink="/on-changes"><button>View POC</button> </a>
+    </div>
+    <div class="poc-card">
+      <p class="task">02</p>
+      <h1>Lazy Loading</h1>
+      <p>On clicking the button below you'll be directed to a lazy loaded component. Feel free to check out the network developer
+        tool from your browser to verify.</p>
+      <a routerLink="/lazy"><button>View POC</button> </a>
+    </div>
+    <div class="poc-card">
+      <p class="task">03</p>
+      <h1>Route Guards </h1>
+      <p>By default the next page is disabled. Feel Free to authorise yourself.</p>
+
+      <a routerLink="/guarded"><button>View POC</button> </a>
+      <button (click)="authToggle()"> 
+        
+         <span *ngIf = "state"> Disable Access </span>
+         <span *ngIf = "state == false"> Enable Access </span>
+      </button>
+    </div>
+    <div class="poc-card">
+      <p class="task">04</p>
+      <h1>Data Transfer </h1>
+      <input type="text" #dataTransfer placeholder="Data entered here will be visible in the next page">
+      <a routerLink="/data-transfer"><button (click)="enterData(dataTransfer.value)" >Send Data</button> </a>
+    </div>
+    <div class="poc-card">
+      <p class="task">05</p>
+      <h1>Form Validation</h1>
+      <form [formGroup]="userForm" (ngSubmit)="onFormSubmit()">
+        <input type="text" email formControlName="email" placeholder="Enter E-Mail">
+        <input type="text" formControlName="phoneNumber" placeholder="Enter Phone Number">
+        <button [class.disabled-btn]="!userForm.valid" [disabled]="!userForm.valid" type="submit">Submit</button>
+      </form>
+    </div>
+    <div class="poc-card">
+      <p class="task">06</p>
+      <h1>Animations</h1>
+      <p> 2 animations examples using Angular and CSS are are present in the next page. </p>
+      <a routerLink="/animations"><button>View POC</button> </a>
+    </div>
+    <div class="poc-card">
+      <p class="task">07</p>
+      <h1>Nested Routing</h1>
+      <p>The following component has three nested routes as examples. </p>
+      <a routerLink="/nested-routing"><button>View POC</button> </a>
+    </div>
+
+    <div class="poc-card">
+      <p class="task">08</p>
+      <h1>Ng Content</h1>
+      <p>The following is an exaple of ng-content being used in a very typical environment</p>
+      <a routerLink="/ng-content"><button>View POC</button> </a>
+    </div>
+    <div class="poc-card">
+      <p class="task">09</p>
+      <h1>Text Formatting (Pipes)</h1>
+      <input type="text" [(ngModel)]="amount" placeholder="Enter Numbers Only" >
+      <p> The formatted value is: {{amount | currency: 'USD':'true' }}</p>
+    </div>
+    <div class="poc-card">
+      <p class="task">11</p>
+      <h1>Binding</h1>
+      <p>Various types of template bindings have been displayed </p>
+      <a routerLink="/binding"><button>View POC</button> </a>
+    </div>
+  </div>
+</div>
