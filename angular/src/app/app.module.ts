@@ -22,7 +22,6 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { HomeComponent } from './components/home/home.component';
 import { GuardedComponent } from './components/guarded/guarded.component';
 import { AuthService } from "./services/auth.service";
-import { OneComponent } from './components/nested/one/one.component';
 import { NestOneComponent } from './components/nested-routing/nest-one/nest-one.component';
 import { NestTwoComponent } from './components/nested-routing/nest-two/nest-two.component';
 import { NestThreeComponent } from './components/nested-routing/nest-three/nest-three.component';
